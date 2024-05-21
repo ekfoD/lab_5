@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.lab5.lab_5.ViewControllers.ClientViewController">
+   <children>
+      <Label fx:id="clientName" layoutX="14.0" layoutY="315.0" prefHeight="18.0" prefWidth="150.0" style="-fx-background-color: white;" />
+      <TextArea fx:id="allMessagesField" editable="false" layoutX="183.0" layoutY="210.0" prefHeight="375.0" prefWidth="302.0" />
+      <Text layoutX="54.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tavo vardas:" textAlignment="CENTER" wrappingWidth="69.341552734375">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dabar esi:" textAlignment="CENTER" wrappingWidth="69.341552734375">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="locationName" layoutX="14.0" layoutY="471.0" prefHeight="18.0" prefWidth="150.0" style="-fx-background-color: white;" />
+      <Button layoutX="21.0" layoutY="160.0" mnemonicParsing="false" onAction="#createRoom" text="Sukurti" />
+      <Button layoutX="235.0" layoutY="160.0" mnemonicParsing="false" onAction="#openSelectedRoomChat" text="Pasirinkti" />
+      <Button layoutX="421.0" layoutY="160.0" mnemonicParsing="false" onAction="#openSelectedClientChat" text="Pasirinkti" />
+      <Text layoutX="13.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sukurti kambarį:" textAlignment="CENTER" wrappingWidth="69.341552734375">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="232.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pasirinkti kambarį:" textAlignment="CENTER" wrappingWidth="69.341552734375">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="418.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pasirinkti vartotoją:" textAlignment="CENTER" wrappingWidth="69.341552734375">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="roomSelect" layoutX="235.0" layoutY="106.0" prefHeight="26.0" prefWidth="64.0" />
+      <ChoiceBox fx:id="clientSelect" layoutX="421.0" layoutY="106.0" prefHeight="26.0" prefWidth="64.0" />
+      <TextField fx:id="roomName" layoutX="8.0" layoutY="106.0" prefHeight="26.0" prefWidth="80.0" />
+      <TextField fx:id="messageInput" layoutX="183.0" layoutY="561.0" prefHeight="26.0" prefWidth="302.0" />
+      <Button layoutX="15.0" layoutY="562.0" mnemonicParsing="false" onAction="#sendMessage" text="Siųsti" />
+   </children>
+</AnchorPane>
